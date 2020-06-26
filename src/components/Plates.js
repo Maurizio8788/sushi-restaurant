@@ -30,7 +30,7 @@ class Plates extends React.Component {
       <h3 className='font-bold text-4xl text-white text-center uppercase pt-16'>Best practice</h3>
       <p className='font-thin text-base text-white text-center pt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
       <div className='container mx-auto px-4 h-auto'>
-      <img src='/img/sushi.png' className='absolute sm:bottom-0'/>
+      <img src='/img/sushi.png' className='absolute'/>
       <img src='/img/sushi2.png' className='absolute'/>
       <div className='flex flex-wrap items-center justify-evenly mt-20'>
 

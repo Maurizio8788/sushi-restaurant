@@ -7,6 +7,25 @@
 .bestPractice img:nth-child(2){ top: 30px;right: 20px;z-index: 0;}
 .card:hover img { animation: plateRotate 2s infinite linear }
 
+@media(max-width:767px) {
+
+  /*------------------------------
+              Navbar
+  ------------------------------*/
+
+  #collapse{ display: none;}
+
+  .active{ display: block!important;}
+
+  /*------------------------------
+           Best Practice
+  ------------------------------*/
+
+  .bestPractice img:first-child{ bottom: 0;right: 20px;}
+
+
+}
+
 @keyframes plateRotate {
   from{
     transform: rotate(0);
