@@ -5,7 +5,9 @@
 .bestPractice h3{ position: relative; z-index: 1;}
 .bestPractice p{ position: relative; z-index: 1;}
 .bestPractice img:nth-child(2){ top: 30px;right: 20px;z-index: 0;}
-.card:hover img { animation: plateRotate 2s infinite linear }
+.bestPractice img:first-child{ left: 20px;z-index: 0;}
+.card:hover img { animation: plateRotate 2s infinite linear; }
+.sushi:hover{ animation: sushi 1s infinite alternate; }
 
 @media(max-width:767px) {
 
@@ -24,6 +26,11 @@
   .bestPractice img:first-child{ bottom: 0;right: 20px;}
 
 
+}
+
+@keyframes sushi{
+  from{ transform:translateY(0px);}
+  to{ transform:translateY(15px); }
 }
 
 @keyframes plateRotate {
