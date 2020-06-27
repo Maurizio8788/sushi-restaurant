@@ -1,3 +1,5 @@
+body{ overflow-x: hidden;}
+
 /*------------------------------
           Best Practice
 ------------------------------*/
@@ -7,7 +9,21 @@
 .bestPractice img:nth-child(2){ top: 30px;right: 20px;z-index: 0;}
 .bestPractice img:first-child{ left: 20px;z-index: 0;}
 .card:hover img { animation: plateRotate 2s infinite linear; }
+.sushi2:hover,
 .sushi:hover{ animation: sushi 1s infinite alternate; }
+
+
+/*------------------------------
+            Counter
+------------------------------*/
+
+.counter:before{ content: " "; background: url('/img/waves.png') no-repeat center center/cover; width: 2000px; height: 961px;display: block;position: absolute; z-index: -1;top: -331px;left: -400px;}
+.counter h2{ z-index: 1;}
+.counter h2:before{ content: " "; background: url('/img/prawn.png') no-repeat center center/cover;width: 113px;height: 90px;display: block;position: absolute;left:-100px;bottom:-40px;}
+.counter h2:after{ content: " "; background: url('/img/sushi3.png') no-repeat center center/cover;width: 114px;height: 104px;display: block;position: absolute;right:0px;bottom:40px;}
+
+
+
 
 @media(max-width:767px) {
 
@@ -25,19 +41,37 @@
 
   .bestPractice img:first-child{ bottom: 0;right: 20px;}
 
+  /*------------------------------
+              Tasty
+  ------------------------------*/
+
+.tasty{ margin-top: 4rem;margin-bottom: 4rem; }
+
+.grid{ flex-direction: column; }
+
+.grid h3{ margin-bottom: 0em;}
+
+
+
+
+  /*------------------------------
+              Counter
+  ------------------------------*/
+
+.counter{ height: 100%;border-top-left-radius: 10px;border-bottom-right-radius:10px;}
+.counter:before{display: none;}
+.counter h2:before{ display: none; }
+.counter h2:after{ z-index: -1;}
+
 
 }
 
 @keyframes sushi{
-  from{ transform:translateY(0px);}
+  from{ transform:translateY(0px); }
   to{ transform:translateY(15px); }
 }
 
 @keyframes plateRotate {
-  from{
-    transform: rotate(0);
-  }
-  to{
-    transform: rotate(360deg);
-  }
+  from{ transform: rotate(0); }
+  to{ transform: rotate(360deg); }
 }

@@ -26,12 +26,12 @@ class Plates extends React.Component {
 
   render(){
     return (
-    <div className='bestPractice lg:h-screen sm:h-auto w-full bg-pink-500 relative'>
+    <section className='bestPractice lg:h-screen sm:h-auto w-full bg-pink-700 relative'>
       <h3 className='font-bold text-4xl text-white text-center uppercase pt-16'>Best practice</h3>
       <p className='font-thin text-base text-white text-center pt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
       <div className='container mx-auto max-w-screen-lg px-4 h-auto'>
       <img src='/img/sushi.png' className='absolute sushi' alt='sushi' />
-      <img src='/img/sushi2.png' className='absolute sushi' alt='sushi' />
+      <img src='/img/sushi2.png' className='absolute sushi2' alt='sushi' />
       <div className='flex flex-wrap items-center justify-evenly mt-20'>
 
           <div className='w-56 h-auto card'>
@@ -61,7 +61,7 @@ class Plates extends React.Component {
         </div> {/* Grid */}
       </div> {/* Container */}
 
-    </div>
+    </section>
     )
   }
 }
