@@ -1,4 +1,5 @@
 import React from 'react';
+import CardPlate from './utility/CardPlate'
 
 
 class Plates extends React.Component {
@@ -12,11 +13,11 @@ class Plates extends React.Component {
           description:'Lorem ipsum dolor sit amet, consectetur adipishing elit'
         },
         card2:{
-          title:'Titolo piatto',
+          title:'Titolo piatto 2',
           description:'Lorem ipsum dolor sit amet, consectetur adipishing elit'
         },
         card3:{
-          title:'Titolo piatto',
+          title:'Titolo piatto 3',
           description:'Lorem ipsum dolor sit amet, consectetur adipishing elit'
         },
       }
@@ -34,29 +35,9 @@ class Plates extends React.Component {
       <img src='/img/sushi2.png' className='absolute sushi2' alt='sushi' />
       <div className='flex flex-wrap items-center justify-evenly mt-20'>
 
-          <div className='w-56 h-auto card'>
-            <div className='w-full h-auto'>
-              <img src='/img/piatto1.png' className='w-full h-full object-cover' alt='sushi' />
-            </div>
-            <h3 className='text-center font-bold text-2xl pt-4 text-white' >{ this.state.cards.card1.title }</h3>
-            <p className='text-center font-thin text-base text-white pt-2'>{ this.state.cards.card1.description }</p>
-          </div>  {/* Card */}
-
-          <div className='w-56 h-auto card'>
-            <div className='w-full h-auto'>
-              <img src='/img/piatto2.png' className='w-full h-full object-cover' alt='sushi' />
-            </div>
-            <h3 className='text-center font-bold text-2xl pt-4 text-white' >{ this.state.cards.card1.title }</h3>
-            <p className='text-center font-thin text-base text-white pt-2'>{ this.state.cards.card1.description }</p>
-          </div>  {/* Card */}
-
-          <div className='w-56 h-auto card'>
-            <div className='w-full h-auto'>
-              <img src='/img/piatto3.png' className='w-full h-full object-cover' alt='sushi' />
-            </div>
-            <h3 className='text-center font-bold text-2xl pt-4 text-white' >{ this.state.cards.card1.title }</h3>
-            <p className='text-center font-thin text-base text-white pt-2'>{ this.state.cards.card1.description }</p>
-          </div>  {/* Card */}
+      <CardPlate title={ this.state.cards.card1.title } description={ this.state.cards.card1.description } img='/img/piatto1.png'/>
+      <CardPlate title={ this.state.cards.card2.title } description={ this.state.cards.card2.description } img='/img/piatto2.png'/>
+      <CardPlate title={ this.state.cards.card3.title } description={ this.state.cards.card3.description } img='/img/piatto3.png'/>
 
         </div> {/* Grid */}
       </div> {/* Container */}

@@ -1,15 +1,18 @@
 import React from 'react';
 
 function Tasty(prop){
+  const style = {
+    flexDirection:prop.direction
+  }
 
     return (
 
     <section className='container max-w-screen-lg my-32 mx-auto px-4 h-screen tasty'>
 
-    <div className='flex justify-around items-center w-full grid'>
+    <div style={style} className='flex justify-around items-center w-full' id='grid'>
 
       <div className='h-auto w-full'>
-        <img src='/img/Tasty.png' className='h-auto w-full object-cover' alt='Tasty' />
+        <img src={prop.img} className='h-auto w-full object-cover' alt='Tasty' />
       </div>
 
       <div className='h-auto w-full lg:p-8'>

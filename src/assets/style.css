@@ -1,6 +1,12 @@
 body{ overflow-x: hidden;}
 
 /*------------------------------
+           Navbar
+------------------------------*/
+
+#search{ margin-left: auto;}
+
+/*------------------------------
           Best Practice
 ------------------------------*/
 
@@ -17,10 +23,12 @@ body{ overflow-x: hidden;}
             Counter
 ------------------------------*/
 
-.counter:before{ content: " "; background: url('/img/waves.png') no-repeat center center/cover; width: 2000px; height: 961px;display: block;position: absolute; z-index: -1;top: -331px;left: -400px;}
+
+.counter:before{ content: " "; background: url('/img/waves.png') no-repeat center center/cover; width: 2000px; height: 961px;display: block;position: absolute; z-index: -1;top: -435px;left: -500px;}
 .counter h2{ z-index: 1;}
 .counter h2:before{ content: " "; background: url('/img/prawn.png') no-repeat center center/cover;width: 113px;height: 90px;display: block;position: absolute;left:-100px;bottom:-40px;}
-.counter h2:after{ content: " "; background: url('/img/sushi3.png') no-repeat center center/cover;width: 114px;height: 104px;display: block;position: absolute;right:0px;bottom:40px;}
+.counter h2:after{ content: " "; background: url('/img/sushi3.png') no-repeat center center/cover;width: 114px;height: 104px;display: block;position: absolute;right:0px;bottom:40px}
+
 
 
 
@@ -35,6 +43,7 @@ body{ overflow-x: hidden;}
 
   .active{ display: block!important;}
 
+
   /*------------------------------
            Best Practice
   ------------------------------*/
@@ -47,9 +56,9 @@ body{ overflow-x: hidden;}
 
 .tasty{ margin-top: 4rem;margin-bottom: 4rem; }
 
-.grid{ flex-direction: column; }
+#grid{ flex-direction: column; }
 
-.grid h3{ margin-bottom: 0em;}
+#grid h3{ margin-bottom: 0em;}
 
 
 

@@ -44,9 +44,9 @@ function navClick(){
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4 text-2xl font-bold">
         Contact
       </a>
-      <div className='pb-0'>
-         <a href="#" className="inline-block text-sm py-1 leading-none text-white border-white hover:text-gray-300 mt-4 lg:mt-0 sm:ml-auto"><i className='fas fa-search fa-2x'></i></a>
-      </div>
+      <a href="#" className="inline-block text-sm py-1 leading-none text-white border-white hover:text-gray-300 mt-4 lg:mt-0" id='search'>
+        <i className='fas fa-search fa-2x'></i>
+      </a>
     </div>
 
 
