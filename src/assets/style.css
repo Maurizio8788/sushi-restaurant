@@ -1,10 +1,6 @@
 body{ overflow-x: hidden;}
 
-/*------------------------------
-           Navbar
-------------------------------*/
 
-#search{ margin-left: auto;}
 
 /*------------------------------
           Best Practice
@@ -15,8 +11,8 @@ body{ overflow-x: hidden;}
 .bestPractice img:nth-child(2){ top: 30px;right: 20px;z-index: 0;}
 .bestPractice img:first-child{ left: 20px;z-index: 0;}
 .card:hover img { animation: plateRotate 2s infinite linear; }
-.sushi2:hover,
-.sushi:hover{ animation: sushi 1s infinite alternate; }
+.sushi-due,
+.sushi{ animation: sushi 1s infinite alternate; }
 
 
 /*------------------------------
@@ -28,8 +24,31 @@ body{ overflow-x: hidden;}
 .counter h2{ z-index: 1;}
 .counter h2:before{ content: " "; background: url('/img/prawn.png') no-repeat center center/cover;width: 113px;height: 90px;display: block;position: absolute;left:-100px;bottom:-40px;}
 .counter h2:after{ content: " "; background: url('/img/sushi3.png') no-repeat center center/cover;width: 114px;height: 104px;display: block;position: absolute;right:0px;bottom:40px}
+#sushi-prawn2{ right: 150px; top: -130px;animation: sushi .5s infinite alternate;}
+
+/*------------------------------
+          Newsletter
+------------------------------*/
+
+#newsletter{ height: 798px;}
+#newsletter:before,
+#newsletter:after{content: " ";display: block;width: 663px;height: 661px;position: absolute;top: -241px;z-index: -1}
+
+#newsletter:before{background: url('/img/waves2.png') no-repeat center/cover;left: -234px;}
+#newsletter:after{ background: url('/img/waves3.png') no-repeat center/cover; right: -234px;}
+
+#prawn{left: 290px; bottom: 150px;animation: plateRotate 2s infinite linear;}
+#sushi2,
+#sushi3{animation: sushi .5s infinite alternate;}
 
 
+/*------------------------------
+            Footer
+------------------------------*/
+
+footer{ background-color: #181818; height: 667px;}
+footer:before{ content:" ";display: block;background: url('/img/waves-footer.png') no-repeat center/cover; position:absolute;width: 2000px;height: 966px;top: -300px;left: -344px;z-index: -1;}
+#sushi-prawn{ right: 130px;animation: sushi .5s infinite alternate;}
 
 
 
@@ -48,15 +67,15 @@ body{ overflow-x: hidden;}
            Best Practice
   ------------------------------*/
 
-  .bestPractice img:first-child{ bottom: 0;right: 20px;}
+  .bestPractice img:first-child{ bottom: 50px;right: 3px!important;left: unset;}
 
   /*------------------------------
               Tasty
   ------------------------------*/
 
-.tasty{ margin-top: 4rem;margin-bottom: 4rem; }
+.tasty{ margin-top: 4rem;margin-bottom: 4rem; height: auto; }
 
-#grid{ flex-direction: column; }
+ #grid{ flex-direction: column!important; }
 
 #grid h3{ margin-bottom: 0em;}
 
@@ -71,9 +90,66 @@ body{ overflow-x: hidden;}
 .counter:before{display: none;}
 .counter h2:before{ display: none; }
 .counter h2:after{ z-index: -1;}
+#sushi-prawn2{ right: 16px;top: -30px;}
 
+
+
+/*------------------------------
+         Testimonial
+------------------------------*/
+#testimonial{ padding: 5rem 0;}
+ #testimonial div:nth-child(1){ display:flex; flex-direction: column; align-items: center;}
+ #testimonial p:nth-child(2) { font-size: 1rem;}
+ #testimonial p:nth-child(3) {font-size: 2.5rem;}
+
+ /*------------------------------
+          Newsletter
+ ------------------------------*/
+
+#newsletter{ padding-top: 16rem;}
+
+#newsletter:after{ top: unset; left: -30px;}
+
+#newsletter h3 { font-size: 2rem;}
+
+#newsletter p { font-size: 1rem;}
+
+#sushi2{display: none;}
+
+#prawn{left: 20px;bottom: 64px;}
+
+#grid-form { flex-direction: column; }
+
+#grid-form input{ width: 100%; }
+
+#grid-form button{ position: static; margin-top: 1em;}
+
+
+
+
+
+ /*------------------------------
+             Footer
+ ------------------------------*/
+
+footer{height: auto; border-top-left-radius: 10px;border-top-right-radius: 15px;}
+footer::before{content: unset;}
+
+#grid-footer{ padding-top: 4rem;}
+
+#grid-footer>div{width: 100%;}
+
+#grid-footer div:nth-child( 2 ),
+#grid-footer div:nth-child( 3 ){
+  margin-bottom: 2em;
+}
+
+#sushi-prawn{ right: 30px;}
 
 }
+
+/* Animazioni */
+
 
 @keyframes sushi{
   from{ transform:translateY(0px); }

@@ -9,7 +9,7 @@ function Tasty(prop){
 
     <section className='container max-w-screen-lg my-32 mx-auto px-4 h-screen tasty'>
 
-    <div style={style} className='flex justify-around items-center w-full' id='grid'>
+    <div style={style} className='flex justify-around items-center w-full flex-row sm:flex-col' id='grid'>
 
       <div className='h-auto w-full'>
         <img src={prop.img} className='h-auto w-full object-cover' alt='Tasty' />

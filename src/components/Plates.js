@@ -32,7 +32,7 @@ class Plates extends React.Component {
       <p className='font-thin text-base text-white text-center pt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
       <div className='container mx-auto max-w-screen-lg px-4 h-auto'>
       <img src='/img/sushi.png' className='absolute sushi' alt='sushi' />
-      <img src='/img/sushi2.png' className='absolute sushi2' alt='sushi' />
+      <img src='/img/sushi2.png' className='absolute sushi-due' alt='sushi' />
       <div className='flex flex-wrap items-center justify-evenly mt-20'>
 
       <CardPlate title={ this.state.cards.card1.title } description={ this.state.cards.card1.description } img='/img/piatto1.png'/>
